@@ -35,9 +35,9 @@ def send_email(subject, msg):
         server = smtplib.SMTP('smtp.gmail.com:587')
         server.ehlo()
         server.starttls()
-        server.login('wenyi.gausscode@gmail.com', 'SuperGirl@022')  
+        server.login('wzeysre@gmail.com', 'password？？？')  
         message = 'Subject: {}\n\n{}'.format(subject, msg)
-        server.sendmail('wenyi.gausscode@gmail.com', ['wyywenyi@gmail.com','frederickwu2012@gmail.com'],message)
+        server.sendmail('wzeysre@gmail.com@gmail.com', ['hohoh@gmail.com','frederickwu2014@gmail.com'],message)
         server.quit()
         print("Success: Email sent!")
     except:
@@ -45,8 +45,8 @@ def send_email(subject, msg):
 
 
 
-h4_ead_status = case_status('WAC1990070403')
-h4_visa_status = case_status('WAC1990053959')
+h4_ead_status = case_status('WAC1990070434')
+h4_visa_status = case_status('WAC1990053912')
 
 send_email('H4_EAD', h4_ead_status)
 send_email('H4_status', h4_visa_status)
